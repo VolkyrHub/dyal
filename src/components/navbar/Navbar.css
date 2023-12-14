@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+.header img {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+/* Estilos para dispositivos con ancho máximo de 576px */
+@media (max-width: 576px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: center;
+  }
+}
+
+/* Estilos para dispositivos con ancho entre 577px y 768px */
+@media (min-width: 577px) and (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+}
+
+/* Estilos para dispositivos con ancho mínimo de 769px */
+@media (min-width: 769px) {
+  .header {
+    padding: 10px;
+  }
+}
